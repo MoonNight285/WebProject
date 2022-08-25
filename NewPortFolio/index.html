@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <title>Bootstrap 5 Basics</title>
+  <!-- 부트스트랩 css와 js를 링크 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+</head>
+
+<!-- 1페이지 -->
+
+<body>
+  <div class="container">
+    <div class="row" style="height: 10vh;">
+      <div class="col">
+        <nav class="navbar navbar-expand-md navbar-light bg-white text-dark fixed-top" id="nav-scroll">
+          <div class="container">
+            <a href="#" class="navbar-brand justify-content-start"><span class="navMenuText">
+                <img src="img/T_logo.png" alt="">
+              </span></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navBar">
+              <ul class="navbar-nav fw-bold">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link active"><span class="navMenuText">상품서비스</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link"><span class="navMenuText">T다이렉트샵</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">T우주</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">T맴버십</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">T로밍</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">혜택/이벤트</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">고객지원</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">
+                      <img src="img/5gx_logo.png" alt="">
+                    </span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">
+                      <img src="img/T_world_biz_logo.png" alt="">
+                    </span></a>
+                  <hr style="height: 10px; width: 1px;">
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">
+                      <img src="img/search.png" alt="">
+                    </span></a>
+                  <hr style="height: 20px; width: 1px;">
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link"><span class="navMenuText">
+                      <img src="img/my_t_logo.png" alt="">
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fulid">
+    <div class="row" style="height: 20vh;">
+      <div class="col">
+        <div id="carouselTWorld" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTWorld" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTWorld" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTWorld" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselTWorld" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselTWorld" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/광고1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/광고2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/광고3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/광고4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/광고5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTWorld" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTWorld" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
