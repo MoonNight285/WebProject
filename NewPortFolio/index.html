@@ -10,9 +10,19 @@
   <!-- 부트스트랩 css와 js를 링크 -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <style>
+    body{
+      margin: 1px;
+    }
     .textMenu {
       margin-top: 10px;
       margin-right: 30px;
+    }
+    .tipHeadText{
+      font-size: 28px;
+    }
+    .tipButton{
+      width: 275px;
+      height: 235px;
     }
   </style>
 </head>
@@ -20,8 +30,8 @@
 <!-- 1페이지 -->
 
 <body>
-  <div class="container">
-    <div class="row" style="height: 10vh;">
+  <div class="container-fulid">
+    <div class="row" style="height: 5vh;">
       <div class="col">
         <nav class="navbar navbar-expand-md navbar-light bg-white text-dark fixed-top" id="nav-scroll">
           <div class="container">
@@ -83,7 +93,7 @@
   </div>
 
   <div class="container-fulid" style="width: 100%;">
-    <div class="row" style="height: 20vh;">
+    <div class="row" style="height: 50vh;">
       <div class="col advertisement">
         <div id="carouselTWorld" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -119,6 +129,79 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="height: 45vh;">
+      <div class="col-3 text-center">
+        <div class="container mt-3">
+          <div class="row mb-3">
+            <div class="col">
+              <span style="font-size: 22px;">"오늘도 당신의 즐거운 하루가<br> 되길 응원합니다!"</span>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <button type="button" class="btn btn-danger" style="width: 100px;">로그인</button>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <div class="border" style="width: 350px; height: 80px; margin: auto;">
+                <div class="d-flex justify-content-center">
+                  <p style="margin:25px 50px">회원가입</p>
+                  <hr style="width: 1px; height: 25px; margin: 25px auto;">
+                  <p style="margin:25px 50px;">간편조회</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="mb-1"><span class="text-danger">#</span>문자 보내기 <span class="text-danger">#</span>지점/대리점찾기</p>
+              <p><span class="text-danger">#</span>국가/지역별로밍요금</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="img/digitalMateAida.jpg" alt="" style="margin-left: 75px;">
+      </div>
+      <div class="col-3">
+        <img class="border-start" src="img/T_DirectShop.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fulid">
+    <div class="row" style="height: 30vh; background-color: #f5f5f5;">
+      <div class="col" style="text-align: center;">
+        <p style="font-size: 36px;" class="mt-5 mb-5">놓치기엔 아까운 SKT만의 꿀팁</p>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btn btn-danger tipButton">
+            <p class="tipHeadText">장기고객</p>
+            <p>을 위한 추가적인 혜택은<br>없나요?</p>
+          </button>
+          <button type="button" class="btn btn-warning tipButton">
+            <p class="tipHeadText">요금제를 변경</p>
+            <p>하고 싶은데 인기 상품은<br>무엇인가요?</p>
+          </button>
+          <button type="button" class="btn btn-success tipButton">
+            <p class="tipHeadText">휴대폰 구매</p>
+            <p>할 때,받을 수 있는 지원금은<br>얼마나 되나요?</p>
+          </button>
+          <button type="button" class="btn btn-success tipButton">
+            <p class="tipHeadText">휴대폰을 분실</p>
+            <p>했는데,찾을 수 있는 방법은<br>없나요?</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 20vh;">
+      <div class="col">
+        <div class="d-flex">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
