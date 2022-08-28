@@ -23,6 +23,7 @@
     .tipButton{
       width: 275px;
       height: 235px;
+      box-shadow: 5px 5px 3px 0px gray;
     }
   </style>
 </head>
@@ -135,7 +136,7 @@
     <div class="row justify-content-center" style="height: 45vh;">
       <div class="col-3 text-center">
         <div class="container mt-3">
-          <div class="row mb-3">
+          <div class="row mb-3 mt-4">
             <div class="col">
               <span style="font-size: 22px;">"오늘도 당신의 즐거운 하루가<br> 되길 응원합니다!"</span>
             </div>
@@ -176,32 +177,176 @@
   <div class="container-fulid">
     <div class="row" style="height: 30vh; background-color: #f5f5f5;">
       <div class="col" style="text-align: center;">
-        <p style="font-size: 36px;" class="mt-5 mb-5">놓치기엔 아까운 SKT만의 꿀팁</p>
+        <p class="h2 mt-5 mb-5">놓치기엔 아까운 SKT만의 꿀팁</p>
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
           <button type="button" class="btn btn-danger tipButton">
             <p class="tipHeadText">장기고객</p>
             <p>을 위한 추가적인 혜택은<br>없나요?</p>
           </button>
-          <button type="button" class="btn btn-warning tipButton">
+          <button type="button" class="btn btn-light tipButton border">
             <p class="tipHeadText">요금제를 변경</p>
             <p>하고 싶은데 인기 상품은<br>무엇인가요?</p>
           </button>
-          <button type="button" class="btn btn-success tipButton">
+          <button type="button" class="btn btn-light tipButton border">
             <p class="tipHeadText">휴대폰 구매</p>
             <p>할 때,받을 수 있는 지원금은<br>얼마나 되나요?</p>
           </button>
-          <button type="button" class="btn btn-success tipButton">
+          <button type="button" class="btn btn-light tipButton border">
             <p class="tipHeadText">휴대폰을 분실</p>
             <p>했는데,찾을 수 있는 방법은<br>없나요?</p>
           </button>
         </div>
       </div>
     </div>
+    <div class="row" style="height: 12vh;"></div>
     <div class="row" style="height: 20vh;">
       <div class="col">
-        <div class="d-flex">
-          <div></div>
-          <div></div>
+        <div class="d-flex justify-content-center">
+          <div class="me-5 text-center">
+            <p class="display-1 mb-0 text-danger fw-bold">1</p>
+            <p class="h5 text-danger fw-bold">혜택</p>
+          </div>
+          <div style="padding-top: 25px; margin-right: 145px;">
+            <p class="h4">리필쿠폰 제공 <span class="text-danger">></span></p>
+            <p>기본제공 데이터를<br><span class="text-danger">2배로 리필할 수 있는 무료쿠폰</span></p>
+          </div>
+          <div class="me-5 text-center border-start" style="padding-left: 130px;">
+            <p class="display-1 mb-0 text-danger fw-bold">2</p>
+            <p class="h5 text-danger fw-bold">혜택</p>
+          </div>
+          <div style="padding-top: 25px;">
+            <p class="h4">T맴버쉽 업그레이드 <span class="text-danger">></span></p>
+            <p>장기가입고객님께 드리는<br><span class="text-danger">T맴버십 등급 업그레이드</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="row" style="height: 5vh;">
+            <div class="col text-center" style="background-color: #f5f5f5;">
+              <p class="pt-3">혜택 더보기<span class="text-danger">></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="height: 8vh;"></div>
+
+  <div class="container-fulid" style="background-color: #f5f5f5; height: 48vh;">
+    <div class="row">
+      <div class="col text-center">
+        <p class="h2 mt-5 mb-4">SKT에서 준비한 특별한 <span class="text-danger">추천상품</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div id="carouselTWorldBottom" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/advertisement_6.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/advertisement_7.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/advertisement_8.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/advertisement_9.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTWorldBottom" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 10vh;"></div>
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="row" style="height: 20vh;">
+            <div class="col">
+              <ul style="display: flex; list-style-type: none;">
+                <li style="width: 85px;">
+                  <div class="rounded-circle bg-secondary text-center">
+                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">FAQ</p>
+                  </div>
+                </li>
+                <li>
+                  <p>자주하는 질문 <span>></span></p>
+                  <p>고객지원에서 궁금하신 점을 찾아보세요.</p>
+                </li>
+                <li style="width: 85px;">
+                  <div class="rounded-circle bg-secondary text-center">
+                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">FAQ</p>
+                  </div>
+                </li>
+                <li>
+                  <p>지점 및 대리점 찾기 <span>></span></p>
+                  <p>가까운 지점 및 대리점을 찾아보세요.</p>
+                </li>
+                <li style="width: 85px;">
+                  <div class="rounded-circle bg-secondary text-center">
+                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">FAQ</p>
+                  </div>
+                </li>
+                <li>
+                  <p>이럴 땐 이렇게 하세요 <span>></span></p>
+                  <p>다양한 상황 별 대처법을 쉽게 안내해드립니다.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="row" style="height: 5vh; background-color: #f5f5f5;">
+            <div class="col">
+              <span>[공지사항]</span>
+              <span>(8월 5주차) 서비스 점검 안내</span>
+              <span>더보기 <span>></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="row" style="height: 5vh;">
+            <div class="col">
+              <div class="border" style="width: 50px; height: 50px;">
+                <p>^</p>
+                <p>TOP</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
