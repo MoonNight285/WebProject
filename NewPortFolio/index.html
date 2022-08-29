@@ -6,89 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="#" type="image/x-icon" />
-  <title>Bootstrap 5 Basics</title>
+  <title>T world Copy</title>
   <!-- 부트스트랩 css와 js를 링크 -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link href="img/T_logo.png" rel="shortcut icon" type="image/x-icon">
   <style>
     body {
       margin: 1px;
     }
 
+    /* 상단으로 이동 */
     #moveToFirstPage {
       text-decoration: none;
       text-decoration-color: black;
       color: black;
     }
 
+    /* 네비게이션 */
     .textMenu {
       margin-top: 10px;
       margin-right: 30px;
-    }
-
-    .tipHeadText {
-      font-size: 28px;
-    }
-
-    .tipButton {
-      width: 275px;
-      height: 235px;
-      box-shadow: 5px 5px 3px 0px gray;
-    }
-
-    .thirdPageListItemA {
-      margin-top: 12px;
-      margin-bottom: 8px;
-    }
-
-    .thirdPageListItemB {
-      font-size: 14px;
-    }
-
-    .thirdPageList {
-      margin-right: 50px;
-    }
-
-    .thridPageInformation {
-      margin-top: 10px;
-    }
-
-    .fotterUL_A {
-      list-style-type: none;
-      display: flex;
-      font-size: 14px;
-    }
-
-    .fotterUL_A li {
-      padding: 0px 12px;
-      border-right: 1px solid rgb(200, 198, 198);
-    }
-
-    .fotterUL_A .boxList {
-      border: 1px solid rgb(200, 198, 198);
-      margin: 0px 6px;
-    }
-
-    .fotterUL_B {
-      list-style-type: none;
-      display: flex;
-      font-size: 9px;
-    }
-
-    .fotterUL_B li {
-      margin: 0px 10px;
-    }
-
-    .fotterUL_C {
-      list-style-type: none;
-      display: flex;
-    }
-
-    .fotterUL_D {
-      list-style-type: none;
-      display: flex;
-      font-size: 12px;
-      margin-bottom: 4px;
-      color: gray;
     }
 
     .navbar .nav-link {
@@ -99,18 +36,31 @@
       color: red !important;
     }
 
-    .navbar .myTLogo:hover {
+    .navbar .myTLogo:hover{
       background-color: red !important;
+    }
+
+    .navbar .myTLogoList:hover + .hiddenMenuBox{
+      display: block;
     }
 
     .hiddenMenuBox {
       position: absolute;
-      width: 300px;
-      height: 200px;
-      background-color: red !important;
+      width: 354px;
+      height: 225px;
+      margin-top: 60px;
+      border: 1px solid rgb(202, 202, 202);
+      background-color: white !important;
       z-index: 100;
+      left: 1204px;
+      display: none;
     }
 
+    .hiddenMenuBox:hover{
+      display: block;
+    }
+
+    /* 상단 광고 */
     .advertisement .carousel-control-prev .carousel-control-prev-icon,
     .advertisement .carousel-control-next .carousel-control-next-icon {
       width: 75px;
@@ -144,6 +94,24 @@
       font-size: 14px;
     }
 
+    /* 공통 */
+    .hiddenMenuBox .btn-group .btn-light:hover, 
+    #questionBox .btn-group .btn-light:hover {
+      background-color: rgb(199, 199, 199);
+    }
+
+    /* 중단 질문박스 */
+    .tipHeadText {
+      font-size: 28px;
+    }
+
+    .tipButton {
+      width: 275px;
+      height: 235px;
+      box-shadow: 5px 5px 3px 0px gray;
+    }
+
+    /* 하단 광고 */
     .suggestItem .carousel-control-prev {
       left: -100px;
     }
@@ -171,6 +139,70 @@
       background-color: rgb(99, 99, 99);
     }
 
+    /* 하단 질문 상자 */
+    .thirdPageList {
+      margin-right: 50px;
+    }
+
+    .thirdPageListItemA {
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .thirdPageListItemB {
+      font-size: 14px;
+    }
+
+    /* 하단 점검 정보 */
+    .thridPageInformation {
+      margin-top: 10px;
+    }
+
+    /* 푸터 */
+    .footerUL_A {
+      list-style-type: none;
+      display: flex;
+      font-size: 14px;
+    }
+
+    .footerUL_A li {
+      padding: 0px 12px;
+      border-right: 1px solid rgb(200, 198, 198);
+    }
+
+    .footerUL_A .boxList {
+      border: 1px solid rgb(200, 198, 198);
+      margin: 0px 6px;
+    }
+
+    .footerUL_B {
+      list-style-type: none;
+      display: flex;
+      font-size: 9px;
+    }
+
+    .footerUL_B li {
+      margin: 0px 10px;
+    }
+
+    .footerUL_C {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .footerUL_D {
+      list-style-type: none;
+      display: flex;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: gray;
+    }
+
+    .footerUL_D li{
+      margin: 0px 10px;
+    }
+
+    /* 상단 광고 캐러셀 버튼 색상 변경 */
     @keyframes carouselBtnColorChange {
       0% {
         background-color: rgb(201, 201, 201);
@@ -183,10 +215,9 @@
   </style>
 </head>
 
-<!-- 1페이지 -->
-
 <body>
-  <div id="firstPage" class="container-fulid">
+  <!-- 1페이지 네비게이션 바 -->
+  <div id="firstPage" class="container-fulid" style="position: relative;">
     <div class="row" style="height: 5vh;">
       <div class="col">
         <nav class="navbar navbar-expand-md navbar-light bg-white text-dark fixed-top" id="nav-scroll">
@@ -235,11 +266,39 @@
                       <img src="img/search.png" alt="">
                     </span></a>
                 </li>
-                <li class="nav-item" style="margin-top: 2px;">
+                <li class="nav-item myTLogoList" style="margin-top: 2px;">
                   <a href="#" class="nav-link myTLogo"><span class="navMenuText">
                       <img src="img/my_t_logo.png" alt="">
                     </span></a>
                 </li>
+                <div class="container hiddenMenuBox">
+                  <div class="row" style="height: 3vh;"></div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="h5 ms-2">하나의 아이디로 다양한<br> SK텔레콤 서비스를 이용하세요.</p>
+                    </div>
+                  </div>
+                  <div class="row" style="height: 2vh;"></div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="btn-group ms-2" style="width: 280px;" role="group" aria-label="Basic mixed styles example">
+                        <button style="width: 140px;" type="button" class="btn btn-danger">로그인</button>
+                        <div>&nbsp;</div>
+                        <button style="width: 140px;" type="button" class="btn btn-light border">회원가입</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="height: 1vh;"></div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="btn-group ms-2" style="width: 280px;" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-light border">간편조회</button>
+                        <div>&nbsp;</div>
+                        <button type="button" class="btn btn-light border">주문확인</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </ul>
             </div>
           </div>
@@ -248,8 +307,8 @@
     </div>
   </div>
 
-  <div class="container-fulid" style="width: 100%; position: relative;">
-    <div class="hiddenMenuBox"></div>
+  <!-- 1페이지 상단 캐러셀(광고) -->
+  <div class="container-fulid" style="width: 100%;">
     <div class="row" style="height: 50vh;">
       <div class="col advertisement">
         <div id="carouselTWorld" class="carousel slide" data-bs-ride="carousel">
@@ -297,6 +356,8 @@
         </div>
       </div>
     </div>
+
+    <!-- 1페이지 로그인 창 및 광고 -->
     <div class="row justify-content-center" style="height: 45vh;">
       <div class="col-3 text-center">
         <div class="container mt-3">
@@ -338,7 +399,8 @@
     </div>
   </div>
 
-  <div class="container-fulid">
+  <!-- 2페이지 질문 영역 -->
+  <div id="questionBox" class="container-fulid">
     <div class="row" style="height: 30vh; background-color: #f5f5f5;">
       <div class="col" style="text-align: center;">
         <p class="h2 mt-5 mb-5">놓치기엔 아까운 SKT만의 꿀팁</p>
@@ -400,6 +462,7 @@
 
   <div class="container" style="height: 8vh;"></div>
 
+  <!-- 3페이지 캐러셀 광고 -->
   <div class="container-fulid" style="background-color: #f5f5f5; height: 48vh;">
     <div class="row">
       <div class="col text-center">
@@ -452,7 +515,10 @@
         </div>
       </div>
     </div>
+
     <div class="row" style="height: 10vh;"></div>
+
+    <!-- 3페이지 도움말 영역 -->
     <div class="row">
       <div class="col">
         <div class="container">
@@ -471,7 +537,7 @@
                 </li>
                 <li style="width: 85px;">
                   <div class="rounded-circle bg-secondary text-center">
-                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">FAQ</p>
+                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">위치</p>
                   </div>
                 </li>
                 <li class="thirdPageList">
@@ -482,7 +548,7 @@
                 </li>
                 <li style="width: 85px;">
                   <div class="rounded-circle bg-secondary text-center">
-                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">FAQ</p>
+                    <p class="h4 text-white" style="padding-top: 28px; padding-bottom: 28px;">?!</p>
                   </div>
                 </li>
                 <li class="thirdPageList">
@@ -497,6 +563,8 @@
         </div>
       </div>
     </div>
+
+    <!-- 3페이지 점검 공지사항 -->
     <div class="row">
       <div class="col">
         <div class="container">
@@ -509,6 +577,8 @@
         </div>
       </div>
     </div>
+
+    <!-- 3페이지 상단으로 이동기능 -->
     <div class="row">
       <div class="col">
         <div class="container">
@@ -526,6 +596,7 @@
       </div>
     </div>
 
+    <!-- 푸터 -->
     <div class="row" style="height: 2vh;"></div>
     <hr style="width: 100%;">
     <div class="row" style="height: 1vh;"></div>
@@ -534,7 +605,7 @@
         <div class="container">
           <div class="row">
             <div class="col-9">
-              <ul class="fotterUL_A">
+              <ul class="footerUL_A">
                 <li>이용약관</li>
                 <li class="fw-bold">개인정보 처리방침</li>
                 <li class="fw-bold">개인정보 이용내역</li>
@@ -544,13 +615,13 @@
                 <li class="fw-bold">커버리지</li>
                 <li>동의정보 지킴이</li>
               </ul>
-              <ul class="fotterUL_A">
+              <ul class="footerUL_A">
                 <li>이용자 피해예방 가이드</li>
                 <li>선택약정 할인</li>
                 <li>책임의 한계와 법적고지</li>
                 <li>개인정보보호 자율보호센터</li>
               </ul>
-              <ul class="fotterUL_A">
+              <ul class="footerUL_A">
                 <li class="boxList">전체메뉴</li>
                 <li class="boxList">이메일 문의</li>
                 <li class="boxList">통신자료 제공내역 열람</li>
@@ -596,7 +667,7 @@
           </div>
           <div class="row" style="height: 5vh;">
             <div class="col-9">
-              <ul class="fotterUL_B">
+              <ul class="footerUL_B">
                 <li><img src="img/award1_1.png" alt=""></li>
                 <li><img src="img/award2_1.png" alt=""></li>
                 <li><img src="img/award3_1.png" alt=""></li>
@@ -607,32 +678,32 @@
               </ul>
             </div>
             <div class="col-3">
-              <ul class="fotterUL_C">
-                <li><img style="width: 32px; margin-right: 5px; margin-left: 35px;" src="img/icons8-twitter-48.png"
-                    alt=""></li>
-                <li><img style="width: 32px; margin-right: 10px;" src="img/icons8-facebook-48.png" alt=""></li>
-                <li><img style="width: 30px; margin-right: 12px; margin-top: 1px;" src="img/icons8-youtube-64.png"
-                    alt=""></li>
-                <li><img style="width: 30px; margin-right: 12px;" src="img/kakao-talk.png" alt=""></li>
-                <li><img style="width: 32px;" src="img/icons8-instagram-48.png" alt=""></li>
+              <ul class="footerUL_C">
+                <li><a href="https://twitter.com/Sktelecom" target="_blank"><img style="width: 32px; margin-right: 5px; margin-left: 35px;" src="img/icons8-twitter-48.png"
+                    alt=""></a></li>
+                <li><a href="https://www.facebook.com/sktelecom/" target="_blank"><img style="width: 32px; margin-right: 10px;" src="img/icons8-facebook-48.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/user/TworldTV" target="_blank"><img style="width: 30px; margin-right: 12px; margin-top: 1px;" src="img/icons8-youtube-64.png"
+                    alt=""></a></li>
+                <li><a href="https://story.kakao.com/ch/sktelecom" target="_blank"><img style="width: 30px; margin-right: 12px;" src="img/kakao-talk.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/sktelecom/" target="_blank"><img style="width: 32px;" src="img/icons8-instagram-48.png" alt=""></a></li>
               </ul>
             </div>
           </div>
           <div class="row" style="height: 7vh;">
             <div class="col">
-              <ul class="fotterUL_D">
+              <ul class="footerUL_D">
                 <li>서울특별시 중구 을지로 65</li>
                 <li>대표이사/사장 : 유영상</li>
                 <li>사업자등록번호 : 104-81-37225</li>
                 <li>판매허가번호 : 중구 02923호</li>
                 <li>사업자정보확인</li>
               </ul>
-              <ul class="fotterUL_D">
+              <ul class="footerUL_D">
                 <li>고객센터 : 휴대폰 국번없이 114(무료) 또는 080-011-6000(무료), 국번없이 1599-0011(유료)</li>
                 <li>인터넷/집전화 고객센터 : 080-816-2000(무료) 또는 1600-2000(유료)</li>
                 <li>T멤버십 마켓 : 1599-3377(유료)</li>
               </ul>
-              <ul class="fotterUL_D">
+              <ul class="footerUL_D">
                 <li>COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</li>
               </ul>
             </div>
@@ -641,7 +712,6 @@
       </div>
     </div>
   </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
-
 </html>
